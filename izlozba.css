@@ -1,0 +1,200 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9; 
+    color: #333;
+    line-height: 1.8;
+    padding-top: 30px; 
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #ffcc00; 
+}
+
+ul {
+    list-style-type: none;
+}
+
+nav {
+    background-color: #004466; 
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0; 
+    width: 100%; 
+    z-index: 1000;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 1px; 
+}
+
+nav ul li a:hover {
+    color: #ff5733;
+}
+
+header {
+    position: relative;
+    height: 400px;
+    background-image: url('https://i0.wp.com/creativeflair.org/wp-content/uploads/images/picasso-blue-period.jpeg?fit=1200%2C686&ssl=1');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding-top: 100px;
+}
+
+header .banner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+header h1 {
+    font-size: 3em;
+    background-color: white;
+    color: #004466;
+    padding: 20px;
+    display: inline-block;
+    border: 5px solid black;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+header p {
+    font-size: 1.5em;
+    margin-top: 20px;
+    text-align: justify;
+}
+
+.gallery {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.gallery h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.gallery-description {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.gallery-boxes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    justify-content: center;
+}
+
+.gallery-box {
+    position: relative;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+.gallery-box:hover {
+    transform: scale(1.05);
+}
+
+.gallery-box img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery-box:hover .overlay {
+    opacity: 1;
+}
+
+.overlay-text {
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+.overlay h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.overlay p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.gallery-box.left {
+    grid-column: 1;
+}
+
+.gallery-box.right {
+    grid-column: 2;
+}
+
+.gallery-box:nth-child(odd) {
+    grid-row: span 2;
+}
+
+.gallery-box:nth-child(even) {
+    grid-row: span 2;
+}
+
+footer {
+    background-color: #004466; 
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 1.1em;
+}
+
+footer p {
+    font-size: 1.1em;
+    margin-bottom: 5px;
+}

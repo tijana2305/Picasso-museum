@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.8;
+    padding-top: 30px;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #ffcc00;
+}
+
+ul {
+    list-style-type: none;
+}
+
+nav {
+    background-color: #004466;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+header {
+    position: relative;
+    height: 400px;
+    background-image: url('https://i0.wp.com/creativeflair.org/wp-content/uploads/images/picasso-blue-period.jpeg?fit=1200%2C686&ssl=1');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding-top: 100px;
+}
+
+header .banner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+header h1 {
+    font-size: 3em;
+    background-color: white;
+    color: #004466;
+    padding: 20px;
+    display: inline-block;
+    border: 5px solid black;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+header p {
+    font-size: 1.5em;
+    margin-top: 20px;
+    text-align: justify;
+}
+
+.description, .history, .highlights, .gallery {
+    padding: 40px 20px;
+    background-color: #fff;
+    margin-bottom: 40px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.description h2, .history h2, .highlights h3, .gallery h3 {
+    font-size: 2.8em;
+    margin-bottom: 20px;
+    color: #004466;
+    text-align: center;
+    font-weight: 600;
+}
+
+.description p, .history p {
+    font-size: 1.2em;
+    line-height: 1.8;
+    text-align: justify;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.highlights ul {
+    font-size: 1.2em;
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+.highlights li {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    transition: all 0.3s ease; 
+}
+
+.highlights li:hover {
+    background-color: #ffcc00; 
+    color: #fff;
+    transform: translateX(10px); 
+}
+
+.highlights li:hover a {
+    color: #fff; 
+}
+
+.gallery .museum-img {
+    width: 30%;
+    height: auto;
+    margin: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.links {
+    background-color: #ffffff;
+    padding: 40px 20px;
+    margin-bottom: 40px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.links h3 {
+    font-size: 2.5em;
+    margin-bottom: 25px;
+    color: #004466;
+    font-weight: bold;
+    text-align: center;
+}
+
+.links ul li {
+    margin: 15px 0;
+}
+
+.links ul li a {
+    font-size: 1.3em;
+    color: #004466;
+    transition: color 0.3s ease;
+}
+
+.links ul li a:hover {
+    color: #ffcc00;
+}
+
+footer {
+    background-color: #004466;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 1.1em;
+}
+
+footer p {
+    font-size: 1.1em;
+    margin-bottom: 5px;
+}

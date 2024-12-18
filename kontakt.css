@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: lightblue;
+    line-height: 1.8;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #ffcc00;
+}
+
+nav {
+    background-color: #004466; 
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0; 
+    width: 100%; 
+    z-index: 1000;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none; /* Uklanja nabrajanje */
+    padding-left: 0; 
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 1px; 
+}
+
+header {
+    position: relative;
+    height: 400px;
+    background-image: url('https://i0.wp.com/creativeflair.org/wp-content/uploads/images/picasso-blue-period.jpeg?fit=1200%2C686&ssl=1');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.7; 
+    color: white;
+    text-align: center;
+    padding-top: 100px;
+}
+
+header .banner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+header h1 {
+    font-size: 3em;
+    background-color: rgba(0, 68, 102, 0.7); /* Poluprovidna pozadina za tekst */
+    padding: 20px;
+    display: inline-block;
+    border: 5px solid black;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+main {
+    padding: 60px 20px;
+    background-color: lightblue;
+}
+
+.contact-info {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 40px;
+    background-color: #ffffff;
+    padding: 40px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.contact-info h2 {
+    font-size: 2.5em;
+    color: #004466;
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    font-size: 1.2em;
+    color: #555;
+}
+
+.contact-form {
+    text-align: center;
+    background-color: #ffffff;
+    padding: 40px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.contact-form h2 {
+    font-size: 2.5em;
+    color: #004466;
+    margin-bottom: 20px;
+}
+
+.contact-form label {
+    font-size: 1.2em;
+    color: #444;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    background-color: #004466;
+    color: #fff;
+    font-size: 1.2em;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #ffcc00;
+}
+
+footer {
+    background-color: #004466;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 1.1em;
+}
+
+footer p {
+    font-size: 1.1em;
+    margin-bottom: 5px;
+}

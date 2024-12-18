@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kontakt stranica Pikaso muzeja. Kontaktirajte nas za informacije o izložbama, umetnosti i posetama.">
+    <title>Kontakt - Pikaso Muzej</title>
+    <link rel="stylesheet" href="kontakt.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Početna</a></li>
+            <li><a href="izlozbe.html">Izložbe</a></li>
+            <li><a href="omuzeju.html">O muzeju</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <div class="banner">
+            <h1>Kontaktirajte nas</h1>
+        </div>
+    </header>
+
+    <main>
+       
+
+        <section class="contact-form">
+            <h2>Pošaljite nam poruku</h2>
+            <form action="submit_form.php" method="POST">
+                <label for="name">Ime i prezime:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email adresa:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Poruka:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">Pošaljite</button>
+            </form>
+        </section>
+
+        <section class="contact-info">
+            <h2>Dođite i posetite nas!</h2>
+            <p>Adresa: Ulica Umjetnosti 123, Beograd, Srbija</p>
+            <p>Telefon: +381 11 2345678</p>
+            <p>Email: info@pikasomuzej.rs</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Pikaso Muzej | Svi prava zadržana.</p>
+    </footer>
+</body>
+</html>
